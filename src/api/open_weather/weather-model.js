@@ -8,6 +8,6 @@ export default class WeatherModel {
         this.tempMin = main?.temp_min
         this.tempMax = main?.temp_max
         this.icon = weather[0]?.icon
-        this.iconURL = `${IMAGE_CDN}/${weather[0]?.icon}@2x.png`
+        this.iconURL = weather[0]?.icon ? `${IMAGE_CDN}/${weather[0]?.icon}@2x.png` : ''
     }
 }

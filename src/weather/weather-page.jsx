@@ -24,7 +24,8 @@ export default class WeatherPage extends React.Component {
     }
 
     setZipCode(zipCode) {
-        this.setState({zipCode})
+        if (isNaN(zipCode)) {return}
+        this.setState({zipCode: zipCode.slice(0, 5)})
     }
 
     getWeather() {
