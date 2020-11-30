@@ -1,6 +1,6 @@
 import './weather-panel.scss'
 
-export default function WeatherPanel ({loading, weatherData, zipCode, zipCodeChange, getWeather}) {
+export default function WeatherPanel ({weatherData, zipCode, zipCodeChange, getWeather}) {
     const onChange = (e) => {
         e.preventDefault()
         zipCodeChange(e.target.value)

@@ -38,13 +38,12 @@ export default class WeatherPage extends React.Component {
     }
 
     render() {
-        const {loading, weatherData, zipCode, error} = this.state
+        const {weatherData, zipCode, error} = this.state
 
         return (
             <div className="container mt-5">
                 <WeatherPanel
                     weatherData={weatherData}
-                    loading={loading}
                     zipCodeChange={this.setZipCode}
                     getWeather={this.getWeather}
                     zipCode={zipCode}
