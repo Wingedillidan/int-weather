@@ -1,6 +1,47 @@
 .weather-panel {
+    .current-temp {
+        font-size: 48pt;
+        letter-spacing: 4pt;
+        margin-top: 54pt;
+    }
+
+    h2 {
+        font-size: 36pt;
+    }
     .weather-icon {
-        width: 42px;
-        height: 42px;
+        width: 60px;
+        height: 60px;
+    }
+
+    hr {
+        border-top-color: #999;
+        border-top-width: 1pt !important;
+    }
+
+    form {
+        margin: 0 25% 0 25%;
+
+        .input-zip-code, .btn-zip-code {
+            border-color: #999 !important;
+            border-width: 1pt !important;
+        }
+        
+        .input-zip-code {
+            box-shadow: 0 1pt 2pt .1pt #ccc inset !important;
+            width: 60%;
+        }
+        
+        .btn-zip-code {
+            box-shadow: 0 .5pt .2pt .1pt #fff inset !important;
+            border-radius: 6pt !important;
+            font-weight: 900 !important;
+            background-image: linear-gradient(#ddd, #aaa);
+            text-shadow: -.5pt 1pt #eee !important;
+
+            &:hover {
+                box-shadow: 0 -.5pt .2pt .1pt #fff inset !important;
+                text-shadow: .5pt -1pt #eee !important;
+            }
+        }
     }
 }
