@@ -14,7 +14,7 @@ export default function WeatherPanel ({weatherData, zipCode, zipCodeChange, getW
     const icon = () => {
         if (!weatherData?.iconURL) {return}
 
-        return <img className="weather-icon" crossOrigin="https://openweathermap.org/" src={weatherData?.iconURL} alt={weatherData?.description} />
+        return <img className="weather-icon" crossOrigin="anonymous" src={weatherData?.iconURL} alt={weatherData?.description} />
     }
 
     return (
